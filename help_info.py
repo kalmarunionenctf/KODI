@@ -24,10 +24,10 @@ add a ctf challenge to a list of challenges in the ctf, then mark it as solved o
 `>ctf challenge list`
 get a list of the challenges in the ctf, and their statuses.
 
-`>ctf challenge pull [https://ctfd.url]`
+`>ctf integrate [https://ctfd.url]`
 will add all of the challenges on the provided CTFd CTF and add them to your challenge list, including solve state.
 
-`>ctf setcreds [ctfd username] [password]`
+`>ctf setcreds [ctfd token]`
 pin the message of ctf credentials, can be fetched by the bot later in order to use >ctf challenge pull.
 
 `>ctf creds`
@@ -53,6 +53,8 @@ specify the category to be used for archived CTF channels, defaults to "Archive"
 '''
 
 utility_help = '''
+`>whois [user]`
+returns my knowledge of the user
 `>magicb [filetype]`
 return the magicbytes/file header of a supplied filetype.
 `>rot "message"`
