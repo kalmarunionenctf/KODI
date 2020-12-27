@@ -44,6 +44,8 @@ class Utility(commands.Cog):
                         f'{at.split(".")[0]}: Verified by `{verifier}`')
             else:
                 await ctx.send(f'I have no history on `{user}`. They were either here before me or was added directly by an admin.')
+        else:
+            await ctx.send(f'Could not find anyone with the username `{user_name}`. Are you sure they are still here?')
 
     @ commands.command(aliases=['char'])
     async def characters(self, ctx, string):
